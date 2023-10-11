@@ -4,10 +4,10 @@
       running ? "停止" : "开始"
     }}</el-button>
     <el-button size="mini" @click="showRemoveoptions = true"> 重置 </el-button>
-    <el-button size="mini" @click="showImport = true"> 导入名单 </el-button>
+    <!-- <el-button size="mini" @click="showImport = true"> 导入名单 </el-button>
     <el-button size="mini" @click="showImportphoto = true">
       导入照片
-    </el-button>
+    </el-button> -->
     <el-dialog
       :append-to-body="true"
       :visible.sync="showSetwat"
@@ -32,11 +32,11 @@
             <span class="colorred">{{ config[form.category] }}</span>
             &nbsp;名
           </span>
-          <span :style="{ marginLeft: '20px' }">
+          <!-- <span :style="{ marginLeft: '20px' }">
             剩余&nbsp;
             <span class="colorred">{{ remain }}</span>
             &nbsp;名
-          </span>
+          </span> -->
         </el-form-item>
 
         <el-form-item label="抽取方式">
@@ -175,6 +175,7 @@ export default {
           }
         }
       }
+      console.log(options)
       return options;
     },
   },
