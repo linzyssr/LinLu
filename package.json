@@ -13,7 +13,7 @@
   },
   "main": "background.js",
   "dependencies": {
-    "core-js": "^3.8.3",
+    "core-js": "^3.34.0",
     "element-ui": "^2.15.14",
     "howler": "^2.2.4",
     "vue": "^2.6.14",
